@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +9,17 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #8d99ae;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  color: rgb(231, 231, 231);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
 .container {
-  background-color: #edf2f4;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
   padding: 2rem;
   border-radius: 1rem;
   min-height: 45vh;
@@ -30,12 +37,13 @@ input {
   border: none;
   outline: none;
   border-radius: 0.75rem;
-  background-color: #edf2f4;
+  background: transparent;
 }
 
 .amount input {
   font-size: 1rem;
-  border: 1px solid lightgray;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: rgb(208, 213, 216);
   margin-top: 0.5rem;
   height: 2.5rem;
   margin-left: 0.25rem;
@@ -53,7 +61,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid lightgrey;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   width: 6rem;
   border-radius: 0.5rem;
   margin-top: 0.2rem;
@@ -75,20 +83,27 @@ input {
 
 .btn {
   margin-top: 2rem;
-  border: 1px solid lightgray;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   height: 2.5rem;
-  background-color: #2b2d42;
-  color: #edf2f4;
+  background-color: #ffffff;
+  color: #2b2d42;
   cursor: pointer;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.25s;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .btn:hover {
   /* background-color: #8d99ae; */
   background-color: #1093eb;
-  color: #2b2d42;
+  color: #ffffff;
 }
 
 i {
   margin-top: 1rem;
+}
+
+.select-container select {
+  color: rgb(231, 231, 231);
+  background: transparent;
 }
